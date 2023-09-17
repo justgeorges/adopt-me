@@ -1,5 +1,5 @@
-import { createRoot } from 'react-dom';
-import Pet from "./Pet.jsx"
+import { createRoot } from 'react-dom/client';
+import SearchParams from './SearchParams'
 
 const App = () => {
 
@@ -10,13 +10,13 @@ const App = () => {
   //     name: "Ben",
   //     breed: "Orange Tabby",
   //   }) old code
+
+  return (
   <div>
     <h1>Adopt Me!</h1>
-    <Pet name="Luna" animal="dog" breed="Havanese" />
-    <Pet name="Ben" animal="cat" breed="Orange Tabby" />
-    <Pet name="Doink" animal="bird" breed="Cockatiel" />
+    <SearchParams/>
   </div>
-
+  )
 };
 
 // let's go make something real
